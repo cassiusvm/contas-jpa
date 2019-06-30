@@ -1,4 +1,4 @@
-package br.eti.cvm.financas.modelo;
+package br.eti.cvm.financas.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
