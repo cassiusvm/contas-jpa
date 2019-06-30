@@ -1,0 +1,38 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>br.eti.cvm</groupId>
+  <artifactId>contas-jpa</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+  <properties>
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+		<java.version>11</java.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<lombok.version>1.18.8</lombok.version>
+	</properties>
+	
+	<dependencies>
+	<dependency>
+  <groupId>javax</groupId>
+  <artifactId>javaee-api</artifactId>
+  <version>8.0.1</version>
+</dependency>
+<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+			</plugin>
+</project>
