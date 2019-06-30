@@ -13,16 +13,21 @@ Datasource and driver configuration on $WILDFLY_HOME/standalone/configuration/st
 ```
 <datasources>
     <datasource jndi-name="java:jboss/datasources/financasDS" pool-name="financasDS" enabled="true" use-java-context="true">
-        <connection-url>jdbc:mariadb://10.0.3.10:3306/financas</connection-url>
+        <connection-url>jdbc:mariadb://10.0.3.10:3306/financas?useSSL=false</connection-url>
         <driver>mariadb</driver>
         <security>
             <user-name>alura</user-name>
             <password>alura</password>
         </security>
+        <pool>
+            <min-pool-size>10</min-pool-size>
+            <max-pool-size>20</max-pool-size>
+            <prefill>true</prefill>
+        </pool>
     </datasource>
     <drivers>
         <driver name="mariadb" module="org.mariadb">
-            <datasource-class>org.mariadb.jdbc.MariaDbDataSource</datasource-class>
+            <driver-class>org.mariadb.jdbc.Driver</driver-class>
         </driver>
     </drivers>
 </datasources>
