@@ -1,0 +1,3 @@
+<jboss-web>
+	<context-root>contas-jpa</context-root>
+</jboss-web>

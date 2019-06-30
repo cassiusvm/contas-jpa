@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<body>
+	<h2>Uma Conta</h2>
+	<h:panelGrid columns="2">
+		<h:outputLabel value="Titular:" for="titular" />
+		<h:outputText vid="titular"
+			value="${umaContaController.conta.titular}" />
+
+		<h:outputLabel value="Banco:" for="banco" />
+		<h:outputText vid="banco" value="${umaContaController.conta.banco}" />
+
+		<h:outputLabel value="Agência:" for="agencia" />
+		<h:outputText vid="agencia"
+			value="${umaContaController.conta.agencia}" />
+
+		<h:outputLabel value="Número:" for="numero" />
+		<h:outputText vid="numero" value="${umaContaController.conta.numero}" />
+	</h:panelGrid>
+</body>
+</html>
