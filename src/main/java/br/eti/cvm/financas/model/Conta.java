@@ -6,16 +6,16 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-@Getter
-@Setter
 @Entity
+@Data
 @SequenceGenerator(name="SEQ_CONTAS", sequenceName="SEQ_CONTAS", initialValue = 1)
 public class Conta {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO, generator="SEQ_CONTAS")
+	@EqualsAndHashCode.Exclude
 	private Integer id;
 	
 	private String titular;

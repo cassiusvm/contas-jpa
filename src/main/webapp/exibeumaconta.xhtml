@@ -8,18 +8,18 @@
 	<h2>Uma Conta</h2>
 	<h:panelGrid columns="2">
 		<h:outputLabel value="Titular:" for="titular" />
-		<h:outputText vid="titular"
-			value="${umaContaController.conta.titular}" />
+		<h:outputText id="titular"
+			value="${umaContaBean.conta.titular}" />
 
 		<h:outputLabel value="Banco:" for="banco" />
-		<h:outputText vid="banco" value="${umaContaController.conta.banco}" />
+		<h:outputText id="banco" value="${umaContaBean.conta.banco}" />
 
 		<h:outputLabel value="Agência:" for="agencia" />
-		<h:outputText vid="agencia"
-			value="${umaContaController.conta.agencia}" />
+		<h:outputText id="agencia"
+			value="${umaContaBean.conta.agencia}" />
 
 		<h:outputLabel value="Número:" for="numero" />
-		<h:outputText vid="numero" value="${umaContaController.conta.numero}" />
+		<h:outputText id="numero" value="${umaContaBean.conta.numero}" />
 	</h:panelGrid>
 </body>
 </html>
