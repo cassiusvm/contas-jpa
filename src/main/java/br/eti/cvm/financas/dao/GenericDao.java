@@ -1,4 +1,4 @@
-package br.eti.cvm.financas.service;
+package br.eti.cvm.financas.dao;
 
 import java.io.Serializable;
 import java.util.List;

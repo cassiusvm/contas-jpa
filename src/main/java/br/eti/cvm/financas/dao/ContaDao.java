@@ -1,4 +1,4 @@
-package br.eti.cvm.financas.service;
+package br.eti.cvm.financas.dao;
 
 import javax.ejb.Stateless;
 

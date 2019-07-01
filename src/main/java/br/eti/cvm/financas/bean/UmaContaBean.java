@@ -7,8 +7,8 @@ import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import br.eti.cvm.financas.dao.ContaDao;
 import br.eti.cvm.financas.model.Conta;
-import br.eti.cvm.financas.service.ContaDao;
 import lombok.Getter;
 
 @Named
